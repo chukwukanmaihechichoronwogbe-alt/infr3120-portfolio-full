@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home · INFR3120 Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Nwogbe Chukwukanma</h1>
+    <p class="tagline">INFR3120 · Portfolio</p>
+  </div>
+  <nav aria-label="Primary">
+    <ul class="menu"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html">About Me</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul>
+  </nav>
+</header>
+<main>
+
+<section class="hero">
+  <h2>Welcome!</h2>
+  <p>This site is built with semantic HTML5 and CSS3, no flexbox, and is responsive using fluid design + media queries.</p>
+  <a class="cta" href="projects.html">See my projects</a>
+</section>
+<section class="highlights">
+  <article><h3>About Me</h3><p>Quick intro. Learn more about my background and interests.</p><p><a href="about.html">Read more »</a></p></article>
+  <article><h3>Projects</h3><p>Coursework and personal builds with short summaries.</p><p><a href="projects.html">Browse projects »</a></p></article>
+  <article><h3>Contact</h3><p>Reach me with the form (Name, Email, Cell, Comments).</p><p><a href="contact.html">Go to contact »</a></p></article>
+</section>
+
+</main>
+<footer><p>&copy; <span id="year"></span> Nwogbe Chukwukanma - Contact: Chukwukanmaihechichoro.nwogbe@ontariotechu.net</p></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

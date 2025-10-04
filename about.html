@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me · INFR3120 Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Nwogbe Chukwukanma</h1>
+    <p class="tagline">INFR3120 · Portfolio</p>
+  </div>
+  <nav aria-label="Primary">
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" aria-current="page">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+
+<section class="about">
+  <h2>About Me</h2>
+  <figure class="profile">
+    <img src="images/your-photo.jpg.jpg" alt="Portrait of Nwogbe Chukwukanma" width="240" height="240">
+    <figcaption>Portrait of Nwogbe Chukwukanma</figcaption>
+  </figure>
+
+  <p>
+    My name is <strong>Nwogbe Chukwukanma</strong> and I am a 2nd-year student in 
+    <em>Technology Management at Ontario Tech University</em>. I have a strong interest in 
+    <em>web development</em> and <em>data analytics</em>, and I am currently building skills with 
+    <em>CSS, JavaScript, Python, and Microsoft tools</em>. My goal is to build a solid portfolio 
+    that showcases both technical and problem-solving abilities. Outside of academics, I enjoy 
+    playing and watching football, which keeps me motivated and balanced. 
+  </p>
+
+  <section aria-labelledby="intro-video">
+    <h3 id="intro-video">Short Intro Video (45–60s)</h3>
+    <video controls width="400">
+      <source src="images/screen-intro.mp4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+</section>
+
+</main>
+<footer><p>&copy; <span id="year"></span> Nwogbe Chukwukanma - Contact: Chukwukanmaihechichoro.nwogbe@ontariotechu.net</p></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

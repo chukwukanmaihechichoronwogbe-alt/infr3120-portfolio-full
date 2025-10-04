@@ -1,0 +1,91 @@
+/* ===== General Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  background: linear-gradient(to right, #004aad, #0077ff);
+  color: white;
+  padding: 1rem;
+}
+
+header h1 { margin: 0; }
+header .tagline { font-size: 0.9rem; }
+
+nav ul.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+main { padding: 1.5rem; }
+
+footer {
+  margin: 2rem 0 0;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+/* ===== Contact Form: Base ===== */
+.contact form {
+  max-width: 720px;
+  background: #f2f2f2;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid #ccc;
+}
+
+.field { margin: .75rem 0; }
+.field label { font-weight: 600; }
+
+.field input,
+.field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: .5rem;
+}
+
+/* Hint text */
+.hint { color: #666; font-size: .85rem; }
+
+/* Submit button (gradient) */
+.actions { margin-top: .5rem; }
+.actions button {
+  padding: .6rem 1.2rem;
+  background: linear-gradient(to right, #0066cc, #00ccff);
+  color: #fff;
+  border: none;
+  border-radius: .3rem;
+  cursor: pointer;
+  transition: opacity .3s ease;
+}
+.actions button:hover { opacity: .85; }
+
+/* Validation colors */
+.field input:invalid, .field textarea:invalid { border: 1px solid #c0392b; }
+.field input:valid, .field textarea:valid { border: 1px solid #2ecc71; }
+
+
+/* Style video on About page */
+.video-wrap video {
+  display: block;
+  width: 60%;         /* takes 60% of page width */
+  max-width: 500px;   /* won’t grow beyond 500px */
+  min-width: 250px;   /* won’t shrink below 250px */
+  margin: 1rem auto;  /* center horizontally */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
